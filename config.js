@@ -2,6 +2,7 @@ System.config({
   "defaultJSExtensions": true,
   "transpiler": "babel",
   "babelOptions": {
+    "modules": "amd",
     "optional": [
       "runtime"
     ]
@@ -35,4 +36,3 @@ System.config({
     }
   }
 });
-
