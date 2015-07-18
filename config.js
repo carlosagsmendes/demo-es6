@@ -17,7 +17,11 @@ System.config({
     "babel": "npm:babel-core@5.7.4",
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
-    "jquery": "github:components/jquery@2.1.1",
+    "jquery": "github:components/jquery@2.1.4",
+    "jquery-ui": "github:components/jqueryui@1.11.4",
+    "github:components/jqueryui@1.11.4": {
+      "jquery": "github:components/jquery@2.1.4"
+    },
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
