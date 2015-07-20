@@ -1,5 +1,4 @@
 System.config({
-  "defaultJSExtensions": true,
   "transpiler": "babel",
   "babelOptions": {
     "modules": "amd",
@@ -8,9 +7,11 @@ System.config({
     ]
   },
   "paths": {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
-  }
+    "github:*": "jspm_packages/github/*.js",
+    "npm:*": "jspm_packages/npm/*.js",
+    "*": "*.js"
+  },
+  "defaultJSExtensions": true
 });
 
 System.config({
@@ -36,3 +37,4 @@ System.config({
     }
   }
 });
+
