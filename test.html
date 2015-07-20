@@ -1,39 +1,40 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta charset='utf-8'>
-  <title>test</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script src="jspm_packages/system.js"></script>
-</head>
-
-<body>
-  <script>
-    System.bundles["jquery-bundle"] = [
-      "github:components/jquery@2.1.4/jquery.js",
-      "github:components/jquery@2.1.4.js",
-      "github:components/jqueryui@1.11.4/jquery-ui.js",
-      "github:components/jqueryui@1.11.4.js"
-    ];
-
-    System.bundles["main-bundle"] = [
-      "npm:core-js@0.9.18/library/modules/$.fw.js",
-      "npm:babel-runtime@5.7.0/helpers/class-call-check.js",
-      "github:components/jqueryui@1.11.4/jquery-ui.js",
-      "npm:core-js@0.9.18/library/modules/$.js",
-      "github:components/jqueryui@1.11.4.js",
-      "npm:core-js@0.9.18/library/fn/object/define-property.js",
-      "npm:babel-runtime@5.7.0/core-js/object/define-property.js",
-      "npm:babel-runtime@5.7.0/helpers/create-class.js",
-      "lib/my-class.js",
-      "lib/main.js"
-    ];
-  </script>
-  <script src='config.js'></script>
-  <script>
-    System.import('lib/main');
-  </script>
-</body>
+	<head>
+		<meta charset='utf-8'>
+		<title>test</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src="jspm_packages/system.js"></script>
+	</head>
+	<body>
+		<script src='config.js'></script>
+		<script>
+			System.config({
+				  "bundles": {
+		    "jquery-bundle": [
+		      "github:components/jquery@2.1.4/jquery.js",
+		      "github:components/jquery@2.1.4.js",
+		      "github:components/jqueryui@1.11.4/jquery-ui.js",
+		      "github:components/jqueryui@1.11.4.js"
+		    ],
+		    "main-bundle": [
+		      "npm:core-js@0.9.18/library/modules/$.fw.js",
+		      "npm:babel-runtime@5.7.0/helpers/class-call-check.js",
+		      "npm:core-js@0.9.18/library/modules/$.js",
+		      "npm:core-js@0.9.18/library/fn/object/define-property.js",
+		      "npm:babel-runtime@5.7.0/core-js/object/define-property.js",
+		      "npm:babel-runtime@5.7.0/helpers/create-class.js",
+		      "lib/my-class.js",
+		      "lib/main.js"
+		    ]
+		  }
+				  
+			  });
+		</script>
+		</script>
+		<script>
+			System.import('lib/main');
+		</script>
+	</body>
 
 </html>
