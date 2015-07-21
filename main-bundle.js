@@ -1,3 +1,4 @@
+'bundle true;"
 System.registerDynamic("npm:core-js@0.9.18/library/modules/$.fw.js", [], true, function(require, exports, module) {
   var global = this,
       __define = global.define;

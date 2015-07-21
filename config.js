@@ -20,6 +20,7 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "jquery": "github:components/jquery@2.1.4",
     "jquery-ui": "github:components/jqueryui@1.11.4",
+    "knockout": "github:knockout/knockout@3.3.0",
     "github:components/jqueryui@1.11.4": {
       "jquery": "github:components/jquery@2.1.4"
     },

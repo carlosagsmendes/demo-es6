@@ -1,5 +1,4 @@
-"bundle true";
-
+'bundle true;"
 (function() {
 var _removeDefine = System.get("@@amd-helpers").createDefine();
 (function(global, factory) {
