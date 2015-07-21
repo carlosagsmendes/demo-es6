@@ -16,9 +16,9 @@ module.exports = function (config) {
 		},
 		
 		
-		proxies: {
-            '/base/': '/base/lib'
-        },
+		// proxies: {
+        //     '/base/': '/base/lib'
+        // },
 
 		// list of files / patterns to load in the browser
 		files: [],
