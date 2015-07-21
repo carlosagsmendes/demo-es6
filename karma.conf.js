@@ -4,7 +4,6 @@ module.exports = function (config) {
 		// base path that will be used to resolve all patterns (eg. files, exclude)
 		basePath: '.',
 
-
 		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
 		frameworks: ['jspm', 'mocha', 'chai'],
@@ -15,11 +14,10 @@ module.exports = function (config) {
   
 		},
 		
+		proxies: {
+            '/base': '/base/lib'
+        },
 		
-		// proxies: {
-        //     '/base/': '/base/lib'
-        // },
-
 		// list of files / patterns to load in the browser
 		files: [],
 
@@ -54,7 +52,7 @@ module.exports = function (config) {
 
 
 		// web server port
-		port: 9876,
+		port: 9000,
 
 
 		// enable / disable colors in the output (reporters and logs)
