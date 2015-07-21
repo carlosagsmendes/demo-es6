@@ -6,7 +6,8 @@
       "lib": "lib"
     },
     "dependencies": {
-      "jquery": "github:components/jquery@^2.1.1",
+      "blueimp/jQuery-File-Upload": "github:blueimp/jQuery-File-Upload@9.10.4",
+      "jquery": "github:components/jquery@^2.1.4",
       "jquery-ui": "github:components/jqueryui@^1.11.4",
       "knockout": "github:knockout/knockout@^3.3.0"
     },
@@ -14,6 +15,27 @@
       "babel": "npm:babel-core@^5.6.4",
       "babel-runtime": "npm:babel-runtime@^5.6.4",
       "core-js": "npm:core-js@^0.9.17"
+    },
+    "overrides": {
+      "github:blueimp/jQuery-File-Upload@9.10.4": {
+        "files": [
+          "js/jquery.fileupload.js",
+          "js/jquery.fileupload-process.js",
+          "js/jquery.fileupload-validate.js"
+        ],
+        "directories": {
+          "lib": "js"
+        },
+        "main": "jquery.fileupload",
+        "dependencies": {
+          "jquery": "github:components/jquery@2.1.4",
+          "jquery-ui": "github:components/jqueryui@^1.11.4"
+        },
+        "map": {
+          "jquery": "jquery",
+          "jquery.ui.widget": "jquery-ui/ui/widget"
+        }
+      }
     }
   },
   "devDependencies": {
