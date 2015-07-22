@@ -27,6 +27,14 @@
           "lib": "js"
         },
         "main": "jquery.fileupload",
+        "shim": {
+          "jquery.fileupload": {
+            "deps": [
+              "jquery",
+              "jquery-ui/ui/widget"
+            ]
+          }
+        },
         "dependencies": {
           "jquery": "github:components/jquery@2.1.4",
           "jquery-ui": "github:components/jqueryui@^1.11.4"
